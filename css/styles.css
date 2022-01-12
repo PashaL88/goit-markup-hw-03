@@ -1,0 +1,216 @@
+/* цвет основного текста #212121 */
+/* цвет вторичного текста #757575 */
+/* акцент #2196F3 */
+/* белый #FFFFFF */
+/* цвет фона основной #E5E5E5 */
+/* цвет фона вторичный #FFFFFF #2F303A */
+
+:root {
+  /* Цвет текста */
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --acent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-bg-color: #e5e5e5;
+  --secondary-bg-color: #2f303a;
+  --additional-bg-color: #f5f4fa;
+  /* Цвет кнопок */
+  --button-bg-color: #f5f4fa;
+  --primary-btn-color: #212121;
+  --btn-white-color: #ffffff;
+  --btn-acent-color: #2196f3;
+  /* Текст */
+  --main-font: Roboto, sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  letter-spacing: 0.03em;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+/* Header */
+.page-header {
+  background-color: var(--primary-white-color);
+}
+.logo {
+  color: var(--acent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--acent-color);
+}
+.logo-header {
+  color: var(--primary-text-color);
+}
+
+/* Navigation */
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--acent-color);
+}
+.site-nav .link.current {
+  color: var(--acent-color);
+}
+.contacts a {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--acent-color);
+}
+.contacts-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+/* Hero */
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* What we do */
+.section-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.features-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features .description {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Team */
+.section-team {
+  background-color: var(--additional-bg-color);
+}
+.team-title {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-description {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* Footer */
+.page-footer {
+  background-color: var(--secondary-bg-color);
+}
+.logo-footer {
+  color: var(--primary-white-color);
+}
+.contacts-adress {
+  color: var(--primary-white-color);
+}
+.contacts .contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Button */
+.button {
+  color: var(--primary-btn-color);
+  background-color: var(--button-bg-color);
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+}
+.button.primary {
+  color: var(--btn-white-color);
+  background-color: var(--btn-acent-color);
+  font-weight: bold;
+  line-height: 1.89;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.button.secondary {
+  font-weight: 500;
+  line-height: 1.16;
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--btn-white-color);
+  background-color: var(--btn-acent-color);
+}
+/* Portfolio main*/
+.section-link {
+  text-decoration: none;
+}
+.section-link .title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.section-link .description {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
