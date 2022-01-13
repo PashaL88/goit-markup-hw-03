@@ -160,6 +160,9 @@ p {
   text-transform: uppercase;
 }
 /* What we do */
+.section-features {
+  padding-bottom: 0;
+}
 .features-list {
   display: flex;
 }
@@ -223,19 +226,18 @@ p {
 .team-list-item:nth-child(4n) {
   margin-right: 0;
 }
+.team-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .team-title {
-  margin-top: 30px;
-  margin-bottom: 10px;
-
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 .team-description {
-  margin-bottom: 30px;
-
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -348,6 +350,9 @@ p {
   padding: 20px 24px 20px 24px;
   border-bottom: 1px solid #eeeeee;
   background: var(--primary-white-color);
+}
+.description-meaning {
+  margin-bottom: 0px;
 }
 .card-image {
   display: block;
