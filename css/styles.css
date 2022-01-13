@@ -194,6 +194,7 @@ p {
   text-transform: uppercase;
 }
 .features-description {
+  margin-bottom: 0;
   line-height: 2;
   font-size: 14px;
   color: var(--secondary-text-color);
@@ -209,7 +210,7 @@ p {
   margin-right: 0;
 }
 /* Team */
-.section .workers {
+.section-workers {
   background-color: var(--additional-bg-color);
 }
 .team-list {
