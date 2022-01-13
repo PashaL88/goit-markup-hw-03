@@ -70,6 +70,7 @@ p {
 }
 .page-header {
   background-color: var(--primary-white-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
@@ -98,14 +99,13 @@ p {
 }
 .site-nav .item {
   margin-right: 50px;
+  padding: 32px 0;
 }
 .site-nav .item:last-child {
   margin-right: 0;
 }
 .site-nav .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -145,7 +145,9 @@ p {
 }
 /* Hero */
 .hero {
+  padding: 200px 0;
   background-color: var(--secondary-bg-color);
+  text-align: center;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -188,11 +190,10 @@ p {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.features .description {
-  margin-bottom: 0;
-  color: var(--secondary-text-color);
+.features-description {
+  line-height: 2;
   font-size: 14px;
-  line-height: 1.71;
+  color: var(--secondary-text-color);
 }
 /* Images */
 .images-list {
@@ -215,6 +216,8 @@ p {
 .team-list-item {
   width: 270px;
   margin-right: 30px;
+  background-color: var(--primary-white-color);
+  text-align: center;
 }
 
 .team-list-item:nth-child(4n) {
@@ -240,20 +243,28 @@ p {
 /* Footer */
 .page-footer {
   background-color: var(--secondary-bg-color);
+  padding: 60px 0;
 }
-.logo-footer {
+.logo.footer {
+  margin-bottom: 20px;
+}
+.logo-footer-item {
   color: var(--primary-white-color);
 }
 .contacts-adress {
+  margin-bottom: 9px;
   color: var(--primary-white-color);
 }
 .contacts .contacts-footer {
+  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
+
 /* Button */
+
 .button {
   border: 1px solid transparent;
   color: var(--primary-btn-color);
@@ -275,9 +286,12 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
 }
+
 .button.secondary {
   border-radius: 4px;
   padding: 6px 22px;
+  margin-bottom: 50px;
+
   font-weight: 500;
   line-height: 1.16;
 }
@@ -286,6 +300,19 @@ p {
   color: var(--btn-white-color);
   background-color: var(--btn-acent-color);
 }
+
+.button-filter {
+  display: flex;
+  justify-content: center;
+}
+.button-filter-item {
+  margin-right: 8px;
+}
+
+.button-filter-item:nth-child(5n) {
+  margin-right: 0;
+}
+
 /* Portfolio main*/
 .section-list {
   display: flex;
@@ -316,4 +343,12 @@ p {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+.container-description {
+  padding: 20px 24px 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  background: var(--primary-white-color);
+}
+.card-image {
+  display: block;
 }
