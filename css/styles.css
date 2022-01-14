@@ -29,7 +29,6 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: var(--main-font);
   letter-spacing: 0.03em;
@@ -248,24 +247,30 @@ p {
   background-color: var(--secondary-bg-color);
   padding: 60px 0;
 }
-.logo.footer {
+.page-footer .logo {
   margin-bottom: 20px;
+  display: block;
 }
 .logo-footer-item {
   color: var(--primary-white-color);
 }
 .contacts-adress {
-  margin-bottom: 9px;
   color: var(--primary-white-color);
 }
-.contacts .contacts-footer {
-  margin-bottom: 9px;
+.contacts-footer {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
 
+.contacts-footer-item {
+  margin-bottom: 9px;
+}
+.contacts-footer-item:last-child {
+  margin-bottom: 0px;
+}
 /* Button */
 
 .button {
@@ -321,32 +326,29 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-.section-list-item {
+.section-item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.section-list-item:nth-child(3n) {
+.section-item:nth-child(3n) {
   margin-right: 0;
 }
-.section-list-item:nth-last-child(-n + 3) {
+.section-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 .section-link {
   text-decoration: none;
 }
-.section-link .title {
+.section-link-title {
+  margin-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
 }
-.section-link .description {
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  line-height: 1.87;
-}
+
 .container-description {
   padding: 20px 24px 20px 24px;
   border-bottom: 1px solid #eeeeee;
@@ -354,6 +356,9 @@ p {
 }
 .description-meaning {
   margin-bottom: 0px;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
 }
 .card-image {
   display: block;
